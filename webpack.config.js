@@ -25,5 +25,11 @@ module.exports = {
     liveReload: true,
     open: true,
   },
-  plugins: [new webpack.HotModuleReplacementPlugin()],
+  plugins: [
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery",
+    }),
+  ],
 };
