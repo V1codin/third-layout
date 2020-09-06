@@ -12,4 +12,10 @@ $(".showcase__slider").slick({
   cssEase: "linear",
   adaptiveHeight: true,
   initialSlide: 1,
+  swipe: true,
+  variableWidth: true,
 });
+
+document.querySelector(".form__btn").onclick = (e) => {
+  e.preventDefault();
+};

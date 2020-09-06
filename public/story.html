@@ -79,7 +79,51 @@
             </div>
             <div class="slide3 slides"></div>
           </div>
-          <div class="showcase__menu"></div>
+          <div class="showcase__menu">
+            <ul class="menu__list">
+              <li class="list__item">
+                <a
+                  class="item__link item__link_showcase showcase_active"
+                  href="#"
+                  >Tenants</a
+                >
+              </li>
+              <li class="list__item">
+                <a class="item__link item__link_showcase" href="#">Oweners</a>
+              </li>
+            </ul>
+            <form class="showcase__form">
+              <p class="form__article">
+                Address, Suburbs, Postcodes, or Regions
+              </p>
+              <input
+                class="form__address"
+                type="text"
+                name="address"
+                id=""
+                placeholder="Example: Wichita Falls, Texas 76301"
+              />
+              <label class="form__checkbox">
+                <input type="checkbox" name="isSuburs" />
+                <span class="checkbox__span">Include surrounding suburbs</span>
+              </label>
+              <div class="form__select-wrapper">
+                <div class="select-wrapper__type">
+                  <label>Property Type :</label>
+                  <select name="property-type" id="">
+                    <option disabled selected>Select one</option>
+                  </select>
+                </div>
+                <div class="bedrooms">
+                  <label>Bedrooms :</label>
+                  <select name="bedrooms" id="">
+                    <option disabled selected>Select one</option>
+                  </select>
+                </div>
+              </div>
+              <button class="form__btn">Search</button>
+            </form>
+          </div>
         </div>
       </div>
     </main>
