@@ -306,6 +306,9 @@ select {
 }
 .form__btn:active {
   border: none;
+  padding: 5px;
+}
+.showcase__btn_size:active {
   padding: 14px;
 }
 .content__info {
@@ -428,7 +431,7 @@ select {
   background-image: linear-gradient(
     to bottom,
     #81bade 0%,
-    #9ac0da 1%,
+    #68acda 1%,
     #6a9dbe 100%
   );
   width: 470px;
@@ -451,4 +454,230 @@ select {
 }
 .sub__form > input {
   width: 310px;
+}
+.login__sign {
+  position: relative;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.login__wrapper {
+  display: flex;
+  position: relative;
+
+  z-index: 200;
+
+  width: 415px;
+  height: 50px;
+  background: #ffffff;
+  box-sizing: border-box;
+
+  clip-path: polygon(0 0, 66% 0, 72% 50%, 66% 100%, 0 100%);
+
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
+.wrapper__text {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  width: 411px;
+  height: 48px;
+  background-image: linear-gradient(
+    to bottom,
+    #81bade 0%,
+    #68acda 1%,
+    #6a9dbe 100%
+  );
+  clip-path: polygon(0 0, 66% 0, 72% 50%, 66% 100%, 0 100%);
+}
+.text {
+  color: #ffffff;
+  font-family: "Arial";
+  font-size: 20px;
+  padding: 12px;
+}
+.login__btn {
+  cursor: pointer;
+  font-family: "Arial";
+  font-size: 20px;
+  border: 1px solid #fff;
+  position: absolute;
+  color: #fff;
+  background-image: linear-gradient(
+    to bottom,
+    #ffa86a 0%,
+    #f79f60 1%,
+    #ff720a 100%
+  );
+  border-radius: 5px;
+  z-index: 20;
+  left: 260px;
+  width: 210px;
+  height: 50px;
+}
+.login__btn:hover {
+  background-image: linear-gradient(
+    to top,
+    #ffa86a 0%,
+    #f79f60 1%,
+    #ff720a 100%
+  );
+}
+.sub__social-link {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  height: 50px;
+}
+.social-link {
+  margin-right: 10px;
+}
+.social-link:last-child {
+  margin-right: 0;
+}
+.social-link:hover > img {
+  transform: scale(1.2);
+}
+.footer__bottom {
+  background-color: #4b7d9b;
+}
+.bottom__content {
+  max-width: 1024px;
+  margin: 25px auto 0 auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+.content__article {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.content__article > h4,
+.section__topic {
+  color: #fff;
+  font-family: "Arial";
+  font-size: 16px;
+  font-weight: 600;
+}
+.article__list {
+  margin-top: 20px;
+}
+.article__list li {
+  font-size: 13px;
+  color: #fff;
+  margin-top: 5px;
+  list-style: none;
+}
+.article__list li:first-child {
+  margin-top: 0;
+}
+.content__section {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 320px;
+}
+.content__section > p {
+  font-size: 13px;
+  margin-top: 20px;
+  line-height: 1.5;
+}
+.section__topic {
+  position: relative;
+}
+.section__topic-wraper {
+  display: flex;
+}
+
+.arrows {
+  display: flex;
+}
+.topic__prev,
+.topic__next {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 0 5px;
+  background: #00000025;
+  border: none;
+  position: relative;
+  cursor: pointer;
+}
+.arrows::before,
+.arrows::after {
+  content: "";
+  width: 40%;
+  height: 2px;
+  margin-top: -1px;
+  background: #0000004b;
+  position: absolute;
+  top: 50%;
+  border-radius: 4px;
+}
+.arrows::before {
+  transform: rotate(45deg);
+}
+.arrows::after {
+  transform: rotate(-45deg);
+}
+.topic__prev::before,
+.topic__prev::after {
+  left: 32%;
+}
+.topic__prev::before {
+  transform-origin: 0 0;
+}
+.topic__prev::after {
+  transform-origin: 0 100%;
+}
+.topic__next::before,
+.topic__next::after {
+  right: 32%;
+}
+.topic__next::before {
+  transform-origin: 100% 100%;
+}
+.topic__next::after {
+  transform-origin: 100% 0;
+}
+.arrows:hover {
+  background-color: #4199cf;
+}
+
+.content__logo {
+  position: relative;
+}
+.logo__footer_ico {
+  position: absolute;
+}
+.logo__footer-article > h4 {
+  color: #fff;
+  font-family: "Arial";
+  font-size: 16px;
+  font-weight: 500;
+}
+.logo__footer-article {
+  margin: 16px 0 0 19px;
+}
+.logo__footer-article > p {
+  margin-top: 35px;
+  color: #fff;
+  font-family: "Arial MT";
+  font-size: 13px;
+  font-weight: 400;
+}
+.section__article {
+  margin-top: 10px;
+}
+.section__article > p {
+  color: #fff;
+  font-family: "Arial";
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 22px;
 }

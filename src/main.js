@@ -15,6 +15,8 @@ $(".showcase__slider").slick({
   initialSlide: 1,
 });
 
-document.querySelector(".form__btn").onclick = function (e) {
-  e.preventDefault();
-};
+document.querySelectorAll(".form__btn").forEach((item) => {
+  item.onclick = function (e) {
+    e.preventDefault();
+  };
+});

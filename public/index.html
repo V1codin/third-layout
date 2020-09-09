@@ -126,7 +126,7 @@
                 class="form__address"
                 type="text"
                 name="address"
-                id=""
+                id="address"
                 placeholder="Example: Wichita Falls, Texas 76301"
               />
               <label class="form__checkbox">
@@ -136,13 +136,13 @@
               <div class="form__select-wrapper">
                 <div class="select-wrapper__type">
                   <label>Property Type :</label>
-                  <select name="property-type" id="">
+                  <select name="property-type" id="propertySelect">
                     <option disabled selected>Select one</option>
                   </select>
                 </div>
                 <div class="bedrooms">
                   <label>Bedrooms :</label>
-                  <select name="bedrooms" id="">
+                  <select name="bedrooms" id="bedroomsSelect">
                     <option disabled selected>Select one</option>
                   </select>
                 </div>
@@ -289,8 +289,15 @@
                 <input type="password" name="password" placeholder="Password" />
                 <button class="form__btn login__btn_size">Login</button>
               </form>
+              <div class="login__sign">
+                <div class="login__wrapper">
+                  <div class="wrapper__text">
+                    <h3 class="text">Not a member yet</h3>
+                  </div>
+                </div>
+                <button class="login__btn">Signup Now</button>
+              </div>
             </div>
-
             <div class="soc__sub">
               <form class="sub__form form">
                 <article class="form__article">
@@ -299,7 +306,80 @@
                 <input type="text" name="email" placeholder="email address" />
                 <button class="form__btn sub__btn_size">Subscribe</button>
               </form>
+              <div class="sub__social-link">
+                <a
+                  href="https://www.facebook.com/"
+                  class="social-link"
+                  target="blank"
+                >
+                  <img src="./IMG/facebook.png" alt="Facebook" />
+                </a>
+                <a
+                  href="https://twitter.com/home"
+                  class="social-link"
+                  target="blank"
+                >
+                  <img src="./IMG/twitter.png" alt="Twitter" />
+                </a>
+                <a
+                  href="https://www.google.com/"
+                  class="social-link"
+                  target="blank"
+                >
+                  <img src="./IMG/google_+.png" alt="Google +" />
+                </a>
+              </div>
             </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="bottom__content">
+            <article class="content__article">
+              <h4>About Us</h4>
+              <ul class="article__list">
+                <li>About us</li>
+                <li>Why us</li>
+                <li>Customer Stories</li>
+                <li>Press Resources</li>
+                <li>Press Releases</li>
+                <li>Contact us</li>
+              </ul>
+            </article>
+
+            <article class="content__article">
+              <h4>Proparties</h4>
+              <ul class="article__list">
+                <li>Rent a home</li>
+                <li>Lease a home</li>
+                <li>Buy a home</li>
+                <li>Sell a home</li>
+                <li>Ask advices</li>
+              </ul>
+            </article>
+
+            <section class="content__section">
+              <div class="section__topic-wraper">
+                <h4 class="section__topic">Costamer Testimonials</h4>
+                <button class="topic__prev arrows"></button>
+                <button class="topic__next arrows"></button>
+              </div>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industr standard dummy text
+                ever since the 1500s, when an unknown printer took a
+              </p>
+              <article class="section__article">
+                <p>Lorem Ipsum is simply</p>
+                <p>Owner, Lorem Ipsum</p>
+              </article>
+            </section>
+
+            <div class="content__logo">
+                <img src="./IMG/logoMini.png" alt="Footer Logo" class="logo__footer_ico" />
+                <article class="logo__footer-article">
+                  <h4>Realestate Company</h4>
+                  <p>© cssauthor.com</p>
+                </article>
           </div>
         </div>
       </footer>
